@@ -11,8 +11,7 @@ with open(os.path.join(here, 'README.md')) as f:
 if __name__ == "__main__":
     setup(
         name = 'dot-restrict-scopes',
-        setup_requires = ['setuptools_scm'],
-        use_scm_version = True,
+        version = "1.0.0",
         description = 'Django OAuth Toolkit extension to restrict the scopes available for an application.',
         long_description = README,
         classifiers = [
