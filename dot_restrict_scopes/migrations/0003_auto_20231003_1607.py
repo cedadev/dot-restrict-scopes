@@ -6,6 +6,10 @@ from django.db import migrations, models
 
 
 class Migration(migrations.Migration):
+    run_before = [
+        ("oauth2_provider", "0006_alter_application_client_secret"),
+    ]
+
     dependencies = [
         ("dot_restrict_scopes", "0002_auto_20220207_1359"),
     ]
